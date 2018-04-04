@@ -15,7 +15,7 @@ contract GetAddressByPubKey {
             for(i=0; i<len; i++){
                 tmp[i] = publicKey[i];
             }
-            
+            //padding zero that is not 64 bytes 
             for(i=tmp.length-1; i>=len; i--){
                 tmp[i] = 0;
             }
